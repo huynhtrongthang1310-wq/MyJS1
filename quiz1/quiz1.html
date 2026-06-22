@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 1 — Quiz nhanh: Vai trò JS, biến, toán tử</title>
+  <link rel="stylesheet" href="../css/quiz1.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>▼ Bài 1 — Quiz nhanh: Vai trò JS, biến, toán tử</h2>
+
+    <div class="question-card" id="q1">
+      <p class="question-text">1. JavaScript trong trang web chủ yếu phụ trách gì?</p>
+      <label class="option"><input type="radio" name="q1" value="0" /> Tạo cấu trúc trang</label>
+      <label class="option"><input type="radio" name="q1" value="1" /> Xử lý tương tác và hành vi</label>
+      <label class="option"><input type="radio" name="q1" value="2" /> Chỉ vẽ màu nền</label>
+      <p class="explain" id="ex1">HTML tạo cấu trúc, CSS tạo kiểu dáng, còn JavaScript xử lý tương tác và hành vi động của trang.</p>
+    </div>
+
+    <div class="question-card" id="q2">
+      <p class="question-text">2. Từ khóa nào nên dùng cho giá trị không muốn gán lại?</p>
+      <label class="option"><input type="radio" name="q2" value="0" /> var</label>
+      <label class="option"><input type="radio" name="q2" value="1" /> let</label>
+      <label class="option"><input type="radio" name="q2" value="2" /> const</label>
+      <p class="explain" id="ex2"><code>const</code> khai báo hằng số — không thể gán lại sau khi khởi tạo. Dùng <code>let</code> khi cần thay đổi giá trị.</p>
+    </div>
+
+    <div class="question-card" id="q3">
+      <p class="question-text">3. Toán tử nào nên ưu tiên để so sánh nghiêm ngặt?</p>
+      <label class="option"><input type="radio" name="q3" value="0" /> ===</label>
+      <label class="option"><input type="radio" name="q3" value="1" /> ==</label>
+      <label class="option"><input type="radio" name="q3" value="2" /> =</label>
+      <p class="explain" id="ex3"><code>===</code> so sánh cả giá trị lẫn kiểu dữ liệu (strict equality). <code>==</code> có thể ép kiểu ngầm, dễ gây lỗi bất ngờ.</p>
+    </div>
+
+    <div class="btn-row">
+      <button id="btn-check" onclick="checkAll()">Chấm quiz</button>
+      <button id="btn-reset" onclick="resetAll()">Làm lại</button>
+    </div>
+
+    <div class="score-box" id="scorebox">
+      <div class="score-num" id="scorenum"></div>
+      <div class="score-label" id="scorelabel"></div>
+    </div>
+  </div>
+
+  <script src="../js/quiz1.js"></script>
+</body>
+</html>
