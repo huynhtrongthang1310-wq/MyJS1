@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 4 — DOM thao tác nội dung</title>
+  <link rel="stylesheet" href="../css/dom.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="demoCard">
+      <h2 id="title">Xin chào</h2>
+      <p id="subtitle">Đây là bài thực hành DOM — thay đổi nội dung và giao diện bằng JavaScript.</p>
+
+      <div class="btn-row">
+        <button id="btnChange">Đổi nội dung</button>
+        <button id="btnStyle">Đổi giao diện</button>
+        <button id="btnReset">Reset</button>
+      </div>
+
+      <div class="log" id="log">
+        <span class="log-label">Console:</span>
+        <span id="logText">Chưa có thao tác nào...</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/dom.js"></script>
+</body>
+</html>
