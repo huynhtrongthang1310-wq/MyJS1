@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 5 — Event playground</title>
+  <link rel="stylesheet" href="../css/events.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>▼ Bài 5 — Event playground: click, change, keyup, submit</h2>
+
+    <!-- 1. click -->
+    <div class="section">
+      <div class="section-label">click</div>
+      <p class="desc">Bấm nút → hiện thông báo hoặc đổi chữ</p>
+      <button id="btnClick">Bấm tôi</button>
+      <span class="result" id="clickResult"></span>
+    </div>
+
+    <!-- 2. change -->
+    <div class="section">
+      <div class="section-label">change</div>
+      <p class="desc">Chọn màu → đổi văn bản kết quả</p>
+      <select id="colorSelect">
+        <option value="">-- Chọn màu --</option>
+        <option value="red">Đỏ</option>
+        <option value="blue">Xanh dương</option>
+        <option value="green">Xanh lá</option>
+        <option value="orange">Cam</option>
+        <option value="purple">Tím</option>
+      </select>
+      <span class="result" id="changeResult">Chưa chọn màu</span>
+    </div>
+
+    <!-- 3. keyup -->
+    <div class="section">
+      <div class="section-label">keyup</div>
+      <p class="desc">Gõ tên → hiển thị xem trước</p>
+      <input type="text" id="nameInput" placeholder="Nhập tên của bạn..." />
+      <div class="preview" id="keyupPreview">Xin chào, <span id="namePreview">...</span>!</div>
+    </div>
+
+    <!-- 4. submit -->
+    <div class="section">
+      <div class="section-label">submit</div>
+      <p class="desc">Gửi form → chặn mặc định bằng <code>preventDefault()</code></p>
+      <form id="myForm">
+        <input type="email" id="emailInput" placeholder="Nhập email..." />
+        <button type="submit">Gửi</button>
+      </form>
+      <div class="result" id="submitResult"></div>
+    </div>
+  </div>
+
+  <script src="../js/events.js"></script>
+</body>
+</html>
